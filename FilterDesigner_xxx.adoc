@@ -1,0 +1,60 @@
+= DNC Filter Designer xxx
+Author<>
+Ver.0.0, 2024-02-15
+:imagesdir: ./images
+:scripts: cjk
+:pdf-theme: default-with-font-fallbacks
+// 見出しに番号を付ける
+//:sectnums:  
+// PDFページサイズ指定
+:pdf-page-size: [11.69in, 8.25in]   
+
+<<<
+
+:toc:
+
+<<<
+
+== Glossary
+// 罫線無しの表
+[cols="1,10",frame="none",grid="none"]
+|===
+|DNC
+|: Digital Noise Cancelling
+|FF
+|: Feed-Forward
+|FB
+|: Feed-Back
+|HY
+|: Hybrid
+|IRAM
+|: Instruction RAM
+|CRAM
+|: Coefficient RAM
+|CanVol
+|: Cancel Volume, volume of the noise signal path in the DNC filter
+|MonVol
+|: Monitor Volume, volume of the music signal path in the DNC filter
+|===
+<<<
+
+== xxx Architecture
+<<<
+
+=== ALEC/AIF Block Diagram
+image::fig01.drawio.png[width=800, align="center"]
+<<<
+
+=== DNC core Block Diagram
+image::fig02.drawio.png[width=800, align="center"]
+Block diagram shows configuration of CXD3781_FFFB_iram_191112.txt/CORE_0 and ExSale_SideTone.txt/CORE_1 
+
+<<<
+
+=== Feedforward(FF) DNC Filter
+image::fig03.drawio.png[width=800, align="center"]
+<<<
+
+=== Feedback(FB) DNC Filter
+image::fig04.drawio.png[width=800, align="center"]
+<<<
